@@ -1,10 +1,33 @@
 
 NGINX_COMPLIE_ARGS = \
 --with-cc-opt='' \
---with-debug --with-pcre-jit --with-ipv6 --with-http_ssl_module --with-http_stub_status_module \
+--with-debug --with-pcre-jit --with-http_ssl_module --with-http_stub_status_module \
 --with-http_realip_module --with-http_auth_request_module --with-http_addition_module --with-http_dav_module \
 --with-http_geoip_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_v2_module \
 --with-http_sub_module --with-http_xslt_module --with-stream --with-stream_ssl_module --with-mail --with-mail_ssl_module --with-threads
+
+# nginx version: nginx/1.11.10
+# 	built by gcc 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4)
+# 	built with OpenSSL 1.0.2g  1 Mar 2016
+# 	TLS SNI support enabled
+# configure arguments: --with-debug --with-file-aio --with-google_perftools_module --with-http_addition_module --with-http_auth_request_module --with-http_dav_module --with-http_degradation_module --with-http_flv_module --with-http_geoip_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_image_filter_module --with-http_mp4_module --with-http_perl_module --with-http_random_index_module --with-http_realip_module --with-http_secure_link_module --with-http_slice_module --with-http_ssl_module --with-http_stub_status_module --with-http_sub_module --with-http_v2_module --with-http_xslt_module --with-libatomic --with-mail --with-mail_ssl_module --with-pcre --with-pcre-jit --with-poll_module --with-select_module --with-stream --with-stream_geoip_module --with-stream_realip_module --with-stream_ssl_module --with-stream_ssl_preread_module --with-threads
+
+#	./configure --with-file-aio --with-google_perftools_module --with-http_addition_module --with-http_auth_request_module --with-http_dav_module --with-http_degradation_module --with-http_flv_module --with-http_geoip_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_image_filter_module --with-http_mp4_module --with-http_perl_module --with-http_random_index_module --with-http_realip_module --with-http_secure_link_module --with-http_slice_module --with-http_ssl_module --with-http_stub_status_module --with-http_sub_module --with-http_v2_module --with-http_xslt_module --with-libatomic --with-mail --with-mail_ssl_module --with-pcre --with-pcre-jit --with-poll_module --with-select_module --with-stream --with-stream_geoip_module --with-stream_realip_module --with-stream_ssl_module --with-stream_ssl_preread_module --with-threads \
+	--add-module=../modules/ngx_devel_kit-0.3.0 \
+	--add-module=../modules/echo-nginx-module-0.60 \
+	--add-module=../modules/nginx-upsync-module-1.0.0 \
+	--add-module=../modules/array-var-nginx-module-0.05 \
+	--add-module=../modules/nginx-statsd-0.0.1 \
+	--add-module=../modules/lua-nginx-module-0.10.7 \
+	--add-module=../modules/headers-more-nginx-module-0.32 \
+	--add-module=../modules/ngx-fancyindex-0.4.1 \
+	--add-module=../modules/ngx_cache_purge-2.3 \
+	--add-module=../modules/set-misc-nginx-module-0.31 \
+	--add-module=../modules/ngx_pagespeed-latest-beta
+
+# --with-debug
+#	--add-module=../modules/nginx_tcp_proxy_module-0.4.5 \
+	--add-module=../modules/redis2-nginx-module-0.13 \
 
 lrzsz:
 	tar -zxvf lrzsz-0.12.20.tar.gz
@@ -108,7 +131,7 @@ mongodb:
 
 nginx:
 	@echo "============================= nginx =================================="
-    apt-get install build-essential libpcre3-dev zlib1g-dev libssl-dev libxml2-dev libxslt1-dev libgeoip-dev && \
+	apt-get install build-essential libpcre3-dev zlib1g-dev libssl-dev libxml2-dev libxslt1-dev libgeoip-dev libgd-dev libgoogle-perftools-dev libatomic-ops-dev libperl-dev && \
 	tar -zxvf nginx-1.10.0.tar.gz && \
 	cd nginx-1.10.0 && \
 	./configure ${NGINX_COMPLIE_ARGS} && make && make install && \
