@@ -1,6 +1,6 @@
 # PACKAGES
 
-(Download)[http://pan.baidu.com/s/1geW1Usb]
+* [Download Packages](http://pan.baidu.com/s/1geW1Usb)
 
 * https://github.com/nicknisi/dotfiles
 
