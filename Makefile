@@ -12,22 +12,31 @@ NGINX_COMPLIE_ARGS = \
 # 	TLS SNI support enabled
 # configure arguments: --with-debug --with-file-aio --with-google_perftools_module --with-http_addition_module --with-http_auth_request_module --with-http_dav_module --with-http_degradation_module --with-http_flv_module --with-http_geoip_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_image_filter_module --with-http_mp4_module --with-http_perl_module --with-http_random_index_module --with-http_realip_module --with-http_secure_link_module --with-http_slice_module --with-http_ssl_module --with-http_stub_status_module --with-http_sub_module --with-http_v2_module --with-http_xslt_module --with-libatomic --with-mail --with-mail_ssl_module --with-pcre --with-pcre-jit --with-poll_module --with-select_module --with-stream --with-stream_geoip_module --with-stream_realip_module --with-stream_ssl_module --with-stream_ssl_preread_module --with-threads
 
-#	./configure --with-file-aio --with-google_perftools_module --with-http_addition_module --with-http_auth_request_module --with-http_dav_module --with-http_degradation_module --with-http_flv_module --with-http_geoip_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_image_filter_module --with-http_mp4_module --with-http_perl_module --with-http_random_index_module --with-http_realip_module --with-http_secure_link_module --with-http_slice_module --with-http_ssl_module --with-http_stub_status_module --with-http_sub_module --with-http_v2_module --with-http_xslt_module --with-libatomic --with-mail --with-mail_ssl_module --with-pcre --with-pcre-jit --with-poll_module --with-select_module --with-stream --with-stream_geoip_module --with-stream_realip_module --with-stream_ssl_module --with-stream_ssl_preread_module --with-threads \
-	--add-module=../modules/ngx_devel_kit-0.3.0 \
-	--add-module=../modules/echo-nginx-module-0.60 \
-	--add-module=../modules/nginx-upsync-module-1.0.0 \
-	--add-module=../modules/array-var-nginx-module-0.05 \
-	--add-module=../modules/nginx-statsd-0.0.1 \
-	--add-module=../modules/lua-nginx-module-0.10.7 \
-	--add-module=../modules/headers-more-nginx-module-0.32 \
-	--add-module=../modules/ngx-fancyindex-0.4.1 \
-	--add-module=../modules/ngx_cache_purge-2.3 \
-	--add-module=../modules/set-misc-nginx-module-0.31 \
-	--add-module=../modules/ngx_pagespeed-latest-beta
+	#	./configure --with-file-aio --with-google_perftools_module --with-http_addition_module --with-http_auth_request_module --with-http_dav_module --with-http_degradation_module --with-http_flv_module --with-http_geoip_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_image_filter_module --with-http_mp4_module --with-http_perl_module --with-http_random_index_module --with-http_realip_module --with-http_secure_link_module --with-http_slice_module --with-http_ssl_module --with-http_stub_status_module --with-http_sub_module --with-http_v2_module --with-http_xslt_module --with-libatomic --with-mail --with-mail_ssl_module --with-pcre --with-pcre-jit --with-poll_module --with-select_module --with-stream --with-stream_geoip_module --with-stream_realip_module --with-stream_ssl_module --with-stream_ssl_preread_module --with-threads \
+		--add-module=../modules/ngx_devel_kit-0.3.0 \
+		--add-module=../modules/array-var-nginx-module-0.05 \
+		--add-module=../modules/lua-nginx-module-0.10.7 \
+		--add-module=../modules/set-misc-nginx-module-0.31 \
+		--add-module=../modules/headers-more-nginx-module-0.32 \
+		--add-module=../modules/echo-nginx-module-0.60 \
+		--add-module=../modules/ngx_pagespeed-latest-beta \
+		--add-module=../modules/ngx_cache_purge-2.3 \
+		--add-module=../modules/ngx-fancyindex-0.4.1 \
+		--add-module=../modules/naxsi-0.55.3/naxsi_src \
+		--add-module=../modules/nginx-upsync-module-1.0.0 \
+		--add-module=../modules/encrypted-session-nginx-module-0.06 \
+		--add-module=../modules/nginx-goodies-nginx-sticky-module-ng-08a395c66e42 \
+		--add-module=../modules/nginx-module-vts-0.1.12 \
+		--add-module=../modules/nginx-statsd-0.0.1
 
 # --with-debug
-#	--add-module=../modules/nginx_tcp_proxy_module-0.4.5 \
-	--add-module=../modules/redis2-nginx-module-0.13 \
+#	--add-module=../modules/ngx_brotli-master \
+# --add-module=../modules/nginx-upsync-module-1.0.0 \
+# --add-module=../modules/nginx-stream-upsync-module-1.0.0 \
+#	--add-module=../modules/nginx-upload-module-2.2.0 \
+#	--add-module=../modules/nginx-upload-progress-module-0.9.2 \
+# --add-module=../modules/nginx_tcp_proxy_module-0.4.5 \
+
 
 lrzsz:
 	tar -zxvf lrzsz-0.12.20.tar.gz
