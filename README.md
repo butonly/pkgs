@@ -20,88 +20,88 @@
 
 ### Required
 
-* [] https://github.com/simpl/ngx_devel_kit
-* [x] https://github.com/openresty/array-var-nginx-module
-* [] https://github.com/openresty/lua-nginx-module
-* [] https://github.com/openresty/set-misc-nginx-module
-* [] https://github.com/openresty/headers-more-nginx-module
-* [] https://github.com/openresty/echo-nginx-module
-* [] https://github.com/pagespeed/ngx_pagespeed
-* [] https://github.com/FRiCKLE/ngx_cache_purge
-* [] https://github.com/alibaba/nginx-http-concat
-* [] https://github.com/aperezdc/ngx-fancyindex
+* [x] https://github.com/simpl/ngx_devel_kit
+* [ ] https://github.com/openresty/array-var-nginx-module
+* [x] https://github.com/openresty/lua-nginx-module
+* [x] https://github.com/openresty/set-misc-nginx-module
+* [x] https://github.com/openresty/headers-more-nginx-module
+* [x] https://github.com/openresty/echo-nginx-module
+* [x] https://github.com/pagespeed/ngx_pagespeed
+* [x] https://github.com/FRiCKLE/ngx_cache_purge
+* [x] https://github.com/alibaba/nginx-http-concat
+* [x] https://github.com/aperezdc/ngx-fancyindex
 
 ### Nginx WAF
 
-* [x] https://github.com/SpiderLabs/ModSecurity/
-* []  https://github.com/nbs-system/naxsi
-* []  https://github.com/loveshell/ngx_lua_waf
+* [ ] https://github.com/SpiderLabs/ModSecurity/
+* [x] https://github.com/nbs-system/naxsi
+* [x] https://github.com/loveshell/ngx_lua_waf
 
 ### Proxy
 
-* [] https://github.com/yaoweibin/nginx_tcp_proxy_module
+* [x] https://github.com/yaoweibin/nginx_tcp_proxy_module
 
 ### Compress&Decompress
 
-* []  https://github.com/google/ngx_brotli
-* [x] https://github.com/evanmiller/mod_zip
+* [x] https://github.com/google/ngx_brotli
+* [ ] https://github.com/evanmiller/mod_zip
 
 ### Security
 
-* []  https://github.com/openresty/encrypted-session-nginx-module
-* [x] https://github.com/openresty/xss-nginx-module
-* [x] https://github.com/GUI/lua-resty-auto-ssl
+* [x] https://github.com/openresty/encrypted-session-nginx-module
+* [ ] https://github.com/openresty/xss-nginx-module
+* [ ] https://github.com/GUI/lua-resty-auto-ssl
 
 ### Upstream
 
-* [] https://github.com/weibocom/nginx-upsync-module HTTP
-* [] https://github.com/xiaokai-wang/nginx-stream-upsync-module TCP
-* [] https://bitbucket.org/nginx-goodies/nginx-sticky-module-ng
+* [x] https://github.com/weibocom/nginx-upsync-module HTTP
+* [x] https://github.com/xiaokai-wang/nginx-stream-upsync-module TCP
+* [x] https://bitbucket.org/nginx-goodies/nginx-sticky-module-ng
 
 ### upload
 
-* []  https://github.com/vkholodkov/nginx-upload-module
-* []  https://github.com/masterzen/nginx-upload-progress-module
-* [x] https://github.com/cfsego/limit_upload_rate
-* [x] https://github.com/calio/form-input-nginx-module
+* [x] https://github.com/vkholodkov/nginx-upload-module
+* [x] https://github.com/masterzen/nginx-upload-progress-module
+* [ ] https://github.com/cfsego/limit_upload_rate
+* [ ] https://github.com/calio/form-input-nginx-module
 
 ### logto
 
-* []  https://github.com/zebrafishlabs/nginx-statsd
-* [x] https://github.com/mailru/graphite-nginx-module
-* [x] https://github.com/brg-liuwei/ngx_kafka_module
+* [x] https://github.com/zebrafishlabs/nginx-statsd
+* [ ] https://github.com/mailru/graphite-nginx-module
+* [ ] https://github.com/brg-liuwei/ngx_kafka_module
 
 ### Stats
 
-* [x] https://github.com/Lax/ngx_http_accounting_module
-* []  https://github.com/vozlt/nginx-module-vts
+* [ ] https://github.com/Lax/ngx_http_accounting_module
+* [x] https://github.com/vozlt/nginx-module-vts
 
 ### Dynamic Image Transformation Module For nginx.
 
-* [x] https://github.com/cubicdaiya/ngx_small_light
+* [ ] https://github.com/cubicdaiya/ngx_small_light
 
 ### memcached
 
-* [x] https://github.com/mdirolf/nginx-gridfs
-* [x] https://github.com/openresty/redis2-nginx-module
-* [x] https://github.com/openresty/memc-nginx-module
+* [ ] https://github.com/mdirolf/nginx-gridfs
+* [ ] https://github.com/openresty/redis2-nginx-module
+* [ ] https://github.com/openresty/memc-nginx-module
 
 ### iconv
 
-* [x] https://github.com/calio/iconv-nginx-module
+* [ ] https://github.com/calio/iconv-nginx-module
 
 ### rtmp NGINX-based Media Streaming Server
 
-* [x] https://github.com/arut/nginx-rtmp-module
+* [ ] https://github.com/arut/nginx-rtmp-module
 
 ### Nginx Push Module Pub/Sub
 
-* [x] https://github.com/slact/nchan
-* [x] https://github.com/wandenberg/nginx-push-stream-module
-* [x] https://github.com/ideawu/icomet
+* [ ] https://github.com/slact/nchan
+* [ ] https://github.com/wandenberg/nginx-push-stream-module
+* [ ] https://github.com/ideawu/icomet
 
 ### Others
 
-* [x] https://github.com/alexazhou/VeryNginx
-* [x] https://github.com/voxpupuli/puppet-nginx
-* [x] https://github.com/cuber/ngx_http_google_filter_module
+* [ ] https://github.com/alexazhou/VeryNginx
+* [ ] https://github.com/voxpupuli/puppet-nginx
+* [ ] https://github.com/cuber/ngx_http_google_filter_module
